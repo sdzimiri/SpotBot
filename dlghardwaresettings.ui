@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dlgHardwareSettings</class>
+ <widget class="QDialog" name="dlgHardwareSettings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>317</width>
+    <height>118</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Hardware Settings</string>
+  </property>
+  <widget class="QPushButton" name="bttn_Close">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>80</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>281</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>IAI 3-Axis Stage</string>
+   </property>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QComboBox" name="comboBox_RobotPort"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="bttn_ConnectRobot">
+       <property name="text">
+        <string>Connect</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_RobotStatus">
+       <property name="text">
+        <string>Disconnected</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

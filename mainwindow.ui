@@ -1,0 +1,2643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1231</width>
+    <height>770</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Spotbot</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>351</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Hardware Status</string>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>331</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_26">
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>IAI 3-Axis Stage:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="lbl_robotStatus">
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Disconnected</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>73</y>
+      <width>351</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Manual Stage Controls</string>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>331</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="1">
+       <widget class="QSpinBox" name="spin_Xpos">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="maximum">
+         <number>200000</number>
+        </property>
+        <property name="singleStep">
+         <number>1000</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_28">
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>X-Position</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QSpinBox" name="spin_Ypos">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="maximum">
+         <number>200000</number>
+        </property>
+        <property name="singleStep">
+         <number>1000</number>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QSpinBox" name="spin_Zpos">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="maximum">
+         <number>100000</number>
+        </property>
+        <property name="singleStep">
+         <number>1000</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_29">
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Y-Position</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_30">
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Z-Position</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QPushButton" name="bttn_MoveAbs">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Move Absolute</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QPushButton" name="bttn_QuickDatumTwo">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Datum Two Approx Coords</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QPushButton" name="bttn_QuickDatumOne">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Datum One Approx Coords</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QPushButton" name="bttn_clearError">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Clear Error</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>359</y>
+      <width>351</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Automated Spotting</string>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>331</width>
+       <height>238</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4" rowstretch="0,0,0,0,0,0,0,0,0,0">
+      <item row="7" column="1">
+       <widget class="QSpinBox" name="spin_ScriptLoopCount">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>false</bool>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>100000</number>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QComboBox" name="comboBox_testSpot_2">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_38">
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Total Script Iterations:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2" colspan="2">
+       <widget class="QPushButton" name="bttn_SetZ">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Set Z</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2" colspan="2">
+       <widget class="QPushButton" name="bttn_SetBottomRight">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Set Datum Two</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2" colspan="2">
+       <widget class="QPushButton" name="bttn_SetTopLeft">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Set Datum One</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QSpinBox" name="spin_bottomRightX">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="maximum">
+         <number>200000</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QSpinBox" name="spin_topLeftX">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="wrapping">
+         <bool>false</bool>
+        </property>
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="maximum">
+         <number>200000</number>
+        </property>
+        <property name="value">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QSpinBox" name="spin_bottomRightY">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="maximum">
+         <number>200000</number>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1" colspan="3">
+       <widget class="QLabel" name="lbl_AutoStatus">
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Ready</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="label_34">
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Status:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label_33">
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Y Position</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_31">
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Fluorescence Test Spot 1</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" colspan="3">
+       <widget class="Line" name="line">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_32">
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>X Position</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2" colspan="2">
+       <widget class="QPushButton" name="bttn_StartSpot">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Start</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QComboBox" name="comboBox_testSpot_1">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QSpinBox" name="spin_topLeftY">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="maximum">
+         <number>200000</number>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QSpinBox" name="spin_Z">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="maximum">
+         <number>100000</number>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_35">
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Fluorescence Test Spot 2</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0" colspan="4">
+       <widget class="QProgressBar" name="progressBar">
+        <property name="value">
+         <number>0</number>
+        </property>
+        <property name="textVisible">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>630</y>
+      <width>351</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Substrate Configuration</string>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>331</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_6">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_36">
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Substrate Version</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="bttn_autoPopulate">
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>AutoPopulate</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="combo_SensorVersion"/>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_6">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>256</y>
+      <width>351</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Test Coordinates</string>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>331</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_5">
+      <item row="0" column="2">
+       <widget class="QSpinBox" name="spin_TestCoordColumn">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="minimum">
+         <number>13</number>
+        </property>
+        <property name="maximum">
+         <number>20</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QSpinBox" name="spin_TestCoordRow">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="minimum">
+         <number>18</number>
+        </property>
+        <property name="maximum">
+         <number>32</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label_27">
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Column</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLabel" name="label_37">
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Row</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="bttnTestCoord">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Move</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="lbl_testCoordStatus">
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>---</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QStackedWidget" name="stackedLayout">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>0</y>
+      <width>851</width>
+      <height>681</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="SensorV1V2">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>811</width>
+        <height>661</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="title">
+       <string>Sensor V1/V2 Map</string>
+      </property>
+      <widget class="QWidget" name="gridLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>40</y>
+         <width>761</width>
+         <height>611</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="1" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>18</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="9">
+         <widget class="QLabel" name="label_23">
+          <property name="text">
+           <string>20</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="2">
+         <widget class="QComboBox" name="comboBox_c14r28"/>
+        </item>
+        <item row="5" column="2">
+         <widget class="QComboBox" name="comboBox_c14r22"/>
+        </item>
+        <item row="2" column="2">
+         <widget class="QComboBox" name="comboBox_c14r19"/>
+        </item>
+        <item row="1" column="2">
+         <widget class="QComboBox" name="comboBox_c14r18"/>
+        </item>
+        <item row="0" column="6">
+         <widget class="QLabel" name="label_21">
+          <property name="text">
+           <string>18</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>21</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>23</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>22</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>26</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="0">
+         <widget class="QLabel" name="label_11">
+          <property name="text">
+           <string>28</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QComboBox" name="comboBox_c13r19"/>
+        </item>
+        <item row="15" column="2">
+         <widget class="QComboBox" name="comboBox_c14r32"/>
+        </item>
+        <item row="2" column="3">
+         <widget class="QComboBox" name="comboBox_c15r19"/>
+        </item>
+        <item row="14" column="2">
+         <widget class="QComboBox" name="comboBox_c14r31"/>
+        </item>
+        <item row="1" column="3">
+         <widget class="QComboBox" name="comboBox_c15r18"/>
+        </item>
+        <item row="9" column="2">
+         <widget class="QComboBox" name="comboBox_c14r26"/>
+        </item>
+        <item row="7" column="2">
+         <widget class="QComboBox" name="comboBox_c14r24"/>
+        </item>
+        <item row="11" column="6">
+         <widget class="QComboBox" name="comboBox_c18r28"/>
+        </item>
+        <item row="1" column="5">
+         <widget class="QComboBox" name="comboBox_c17r18"/>
+        </item>
+        <item row="1" column="4">
+         <widget class="QComboBox" name="comboBox_c16r18"/>
+        </item>
+        <item row="13" column="2">
+         <widget class="QComboBox" name="comboBox_c14r30"/>
+        </item>
+        <item row="15" column="1">
+         <widget class="QComboBox" name="comboBox_c13r32"/>
+        </item>
+        <item row="14" column="1">
+         <widget class="QComboBox" name="comboBox_c13r31"/>
+        </item>
+        <item row="13" column="1">
+         <widget class="QComboBox" name="comboBox_c13r30"/>
+        </item>
+        <item row="10" column="1">
+         <widget class="QComboBox" name="comboBox_c13r27"/>
+        </item>
+        <item row="8" column="1">
+         <widget class="QComboBox" name="comboBox_c13r25"/>
+        </item>
+        <item row="6" column="1">
+         <widget class="QComboBox" name="comboBox_c13r23"/>
+        </item>
+        <item row="6" column="5">
+         <widget class="QComboBox" name="comboBox_c17r23"/>
+        </item>
+        <item row="15" column="0">
+         <widget class="QLabel" name="label_15">
+          <property name="text">
+           <string>32</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>24</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="3">
+         <widget class="QComboBox" name="comboBox_c15r23"/>
+        </item>
+        <item row="0" column="3">
+         <widget class="QLabel" name="label_18">
+          <property name="text">
+           <string>15</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>19</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>20</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QComboBox" name="comboBox_c13r21"/>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>25</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>27</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="0">
+         <widget class="QLabel" name="label_12">
+          <property name="text">
+           <string>29</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="9">
+         <widget class="QComboBox" name="comboBox_c20r19"/>
+        </item>
+        <item row="2" column="6">
+         <widget class="QComboBox" name="comboBox_c18r19"/>
+        </item>
+        <item row="2" column="4">
+         <widget class="QComboBox" name="comboBox_c16r19"/>
+        </item>
+        <item row="2" column="5">
+         <widget class="QComboBox" name="comboBox_c17r19"/>
+        </item>
+        <item row="8" column="3">
+         <widget class="QComboBox" name="comboBox_c15r25"/>
+        </item>
+        <item row="8" column="5">
+         <widget class="QComboBox" name="comboBox_c17r25"/>
+        </item>
+        <item row="8" column="7">
+         <widget class="QComboBox" name="comboBox_c19r25"/>
+        </item>
+        <item row="9" column="4">
+         <widget class="QComboBox" name="comboBox_c16r26"/>
+        </item>
+        <item row="9" column="6">
+         <widget class="QComboBox" name="comboBox_c18r26"/>
+        </item>
+        <item row="2" column="7">
+         <widget class="QComboBox" name="comboBox_c19r19"/>
+        </item>
+        <item row="1" column="6">
+         <widget class="QComboBox" name="comboBox_c18r18"/>
+        </item>
+        <item row="0" column="4">
+         <widget class="QLabel" name="label_19">
+          <property name="text">
+           <string>16</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="5">
+         <widget class="QLabel" name="label_20">
+          <property name="text">
+           <string>17</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="7">
+         <widget class="QLabel" name="label_22">
+          <property name="text">
+           <string>19</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="7">
+         <widget class="QComboBox" name="comboBox_c19r23"/>
+        </item>
+        <item row="13" column="0">
+         <widget class="QLabel" name="label_13">
+          <property name="text">
+           <string>30</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="0">
+         <widget class="QLabel" name="label_14">
+          <property name="text">
+           <string>31</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_16">
+          <property name="text">
+           <string>13</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="label_17">
+          <property name="text">
+           <string>14</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="3">
+         <widget class="QComboBox" name="comboBox_c15r27"/>
+        </item>
+        <item row="10" column="5">
+         <widget class="QComboBox" name="comboBox_c17r27"/>
+        </item>
+        <item row="10" column="7">
+         <widget class="QComboBox" name="comboBox_c19r27"/>
+        </item>
+        <item row="11" column="4">
+         <widget class="QComboBox" name="comboBox_c16r28"/>
+        </item>
+        <item row="14" column="4">
+         <widget class="QComboBox" name="comboBox_c16r31"/>
+        </item>
+        <item row="15" column="4">
+         <widget class="QComboBox" name="comboBox_c16r32"/>
+        </item>
+        <item row="13" column="5">
+         <widget class="QComboBox" name="comboBox_c17r30"/>
+        </item>
+        <item row="15" column="5">
+         <widget class="QComboBox" name="comboBox_c17r32"/>
+        </item>
+        <item row="13" column="6">
+         <widget class="QComboBox" name="comboBox_c18r30"/>
+        </item>
+        <item row="14" column="6">
+         <widget class="QComboBox" name="comboBox_c18r31"/>
+        </item>
+        <item row="15" column="6">
+         <widget class="QComboBox" name="comboBox_c18r32"/>
+        </item>
+        <item row="13" column="7">
+         <widget class="QComboBox" name="comboBox_c19r30"/>
+        </item>
+        <item row="14" column="7">
+         <widget class="QComboBox" name="comboBox_c19r31"/>
+        </item>
+        <item row="15" column="7">
+         <widget class="QComboBox" name="comboBox_c19r32"/>
+        </item>
+        <item row="4" column="5">
+         <widget class="QComboBox" name="comboBox_c17r21"/>
+        </item>
+        <item row="4" column="7">
+         <widget class="QComboBox" name="comboBox_c19r21"/>
+        </item>
+        <item row="4" column="3">
+         <widget class="QComboBox" name="comboBox_c15r21"/>
+        </item>
+        <item row="5" column="4">
+         <widget class="QComboBox" name="comboBox_c16r22"/>
+        </item>
+        <item row="5" column="6">
+         <widget class="QComboBox" name="comboBox_c18r22"/>
+        </item>
+        <item row="7" column="4">
+         <widget class="QComboBox" name="comboBox_c16r24"/>
+        </item>
+        <item row="7" column="6">
+         <widget class="QComboBox" name="comboBox_c18r24"/>
+        </item>
+        <item row="13" column="3">
+         <widget class="QComboBox" name="comboBox_c15r30"/>
+        </item>
+        <item row="14" column="3">
+         <widget class="QComboBox" name="comboBox_c15r31"/>
+        </item>
+        <item row="15" column="3">
+         <widget class="QComboBox" name="comboBox_c15r32"/>
+        </item>
+        <item row="14" column="5">
+         <widget class="QComboBox" name="comboBox_c17r31"/>
+        </item>
+        <item row="13" column="4">
+         <widget class="QComboBox" name="comboBox_c16r30"/>
+        </item>
+        <item row="1" column="1">
+         <widget class="QComboBox" name="comboBox_c13r18"/>
+        </item>
+        <item row="1" column="7">
+         <widget class="QComboBox" name="comboBox_c19r18"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_24">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>30</y>
+         <width>61</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Column</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_25">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>300</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Row</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page">
+     <widget class="QGroupBox" name="groupBox_9">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>461</width>
+        <height>661</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Sensor V3 Map</string>
+      </property>
+      <widget class="QLabel" name="label_59">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>310</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Row</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QWidget" name="gridLayoutWidget_10">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>110</y>
+         <width>241</width>
+         <height>421</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_10">
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_60">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>2</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_61">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>1</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_62">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>3</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_63">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>4</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_64">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>5</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_65">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>6</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_66">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>7</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_67">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>8</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="comboBox_v3_1"/>
+        </item>
+        <item row="1" column="1">
+         <widget class="QComboBox" name="comboBox_v3_2"/>
+        </item>
+        <item row="2" column="1">
+         <widget class="QComboBox" name="comboBox_v3_3"/>
+        </item>
+        <item row="3" column="1">
+         <widget class="QComboBox" name="comboBox_v3_4"/>
+        </item>
+        <item row="4" column="1">
+         <widget class="QComboBox" name="comboBox_v3_5"/>
+        </item>
+        <item row="5" column="1">
+         <widget class="QComboBox" name="comboBox_v3_6"/>
+        </item>
+        <item row="6" column="1">
+         <widget class="QComboBox" name="comboBox_v3_7"/>
+        </item>
+        <item row="7" column="1">
+         <widget class="QComboBox" name="comboBox_v3_8"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_10">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>10</y>
+        <width>341</width>
+        <height>341</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Sensor Spotting</string>
+      </property>
+      <widget class="QWidget" name="gridLayoutWidget_11">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>301</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_11">
+        <item row="0" column="1">
+         <widget class="QSpinBox" name="spin_vertGrid_v3">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>100</number>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_72">
+          <property name="text">
+           <string>Horizontal Spot Grid</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_71">
+          <property name="text">
+           <string>Vertical Spot Grid</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QSpinBox" name="spin_horGrid_v3">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QSpinBox" name="spin_overshootV3">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="value">
+           <number>10</number>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_74">
+          <property name="text">
+           <string>Overshoot (%)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_75">
+          <property name="text">
+           <string>Spot Diameter (um)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QSpinBox" name="spin_v3_spotSize">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="maximum">
+           <number>5000</number>
+          </property>
+          <property name="singleStep">
+           <number>100</number>
+          </property>
+          <property name="value">
+           <number>400</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGraphicsView" name="graphicsView_SensorV3">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>160</y>
+         <width>300</width>
+         <height>170</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QGroupBox" name="groupBox_7">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>461</width>
+        <height>661</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Sensor V4 Map</string>
+      </property>
+      <widget class="QLabel" name="label_39">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>330</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Row</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QWidget" name="gridLayoutWidget_7">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>130</y>
+         <width>311</width>
+         <height>421</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_7">
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_69">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>1</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_40">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>2</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_41">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>1</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_42">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>3</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_43">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>4</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_44">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>5</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_45">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>6</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_46">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>7</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="label_47">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>8</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QComboBox" name="comboBox_v4_c1r1"/>
+        </item>
+        <item row="2" column="1">
+         <widget class="QComboBox" name="comboBox_v4_c1r2"/>
+        </item>
+        <item row="3" column="1">
+         <widget class="QComboBox" name="comboBox_v4_c1r3"/>
+        </item>
+        <item row="4" column="1">
+         <widget class="QComboBox" name="comboBox_v4_c1r4"/>
+        </item>
+        <item row="5" column="1">
+         <widget class="QComboBox" name="comboBox_v4_c1r5"/>
+        </item>
+        <item row="6" column="1">
+         <widget class="QComboBox" name="comboBox_v4_c1r6"/>
+        </item>
+        <item row="7" column="1">
+         <widget class="QComboBox" name="comboBox_v4_c1r7"/>
+        </item>
+        <item row="8" column="1">
+         <widget class="QComboBox" name="comboBox_v4_c1r8"/>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="label_70">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>10</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>2</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QComboBox" name="comboBox_v4_c2r1"/>
+        </item>
+        <item row="2" column="2">
+         <widget class="QComboBox" name="comboBox_v4_c2r2"/>
+        </item>
+        <item row="3" column="2">
+         <widget class="QComboBox" name="comboBox_v4_c2r3"/>
+        </item>
+        <item row="4" column="2">
+         <widget class="QComboBox" name="comboBox_v4_c2r4"/>
+        </item>
+        <item row="5" column="2">
+         <widget class="QComboBox" name="comboBox_v4_c2r5"/>
+        </item>
+        <item row="6" column="2">
+         <widget class="QComboBox" name="comboBox_v4_c2r6"/>
+        </item>
+        <item row="7" column="2">
+         <widget class="QComboBox" name="comboBox_v4_c2r7"/>
+        </item>
+        <item row="8" column="2">
+         <widget class="QComboBox" name="comboBox_v4_c2r8"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_68">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>100</y>
+         <width>61</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Column</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_8">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>10</y>
+        <width>341</width>
+        <height>341</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Sensor Spotting</string>
+      </property>
+      <widget class="QWidget" name="gridLayoutWidget_8">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>301</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_8">
+        <item row="2" column="1">
+         <widget class="QSpinBox" name="spin_overshootV4">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="value">
+           <number>10</number>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QSpinBox" name="spin_vertGrid_v4">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>100</number>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QSpinBox" name="spin_horGrid_v4">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_48">
+          <property name="text">
+           <string>Vertical Spot Grid</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_49">
+          <property name="text">
+           <string>Horizontal Spot Grid</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_73">
+          <property name="text">
+           <string>Overshoot (%)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QSpinBox" name="spin_v4_spotSize">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="maximum">
+           <number>5000</number>
+          </property>
+          <property name="singleStep">
+           <number>100</number>
+          </property>
+          <property name="value">
+           <number>400</number>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_76">
+          <property name="text">
+           <string>Spot Diameter (um)</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGraphicsView" name="graphicsView_SensorV4">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>160</y>
+         <width>300</width>
+         <height>170</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QGroupBox" name="groupBox_11">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>811</width>
+        <height>621</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Hyperspectral Apertures</string>
+      </property>
+      <widget class="QWidget" name="gridLayoutWidget_9">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>90</y>
+         <width>741</width>
+         <height>461</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_9">
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_56">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_51">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_53">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>3</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_54">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>4</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="label_57">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>2</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QLabel" name="label_55">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>3</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="4">
+         <widget class="QLabel" name="label_58">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>4</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="5">
+         <widget class="QLabel" name="label_78">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>5</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_52">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>2</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="6">
+         <widget class="QLabel" name="label_79">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>6</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QComboBox" name="comboBox_hsa_c1r1">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QComboBox" name="comboBox_hsa_c2r1">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QComboBox" name="comboBox_hsa_c3r1">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="4">
+         <widget class="QComboBox" name="comboBox_hsa_c4r1">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="5">
+         <widget class="QComboBox" name="comboBox_hsa_c5r1">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="6">
+         <widget class="QComboBox" name="comboBox_hsa_c6r1">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QComboBox" name="comboBox_hsa_c1r2">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QComboBox" name="comboBox_hsa_c2r2">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QComboBox" name="comboBox_hsa_c3r2">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="4">
+         <widget class="QComboBox" name="comboBox_hsa_c4r2">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="5">
+         <widget class="QComboBox" name="comboBox_hsa_c5r2">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="6">
+         <widget class="QComboBox" name="comboBox_hsa_c6r2">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QComboBox" name="comboBox_hsa_c1r3">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QComboBox" name="comboBox_hsa_c2r3">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3">
+         <widget class="QComboBox" name="comboBox_hsa_c3r3">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="4">
+         <widget class="QComboBox" name="comboBox_hsa_c4r3">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="5">
+         <widget class="QComboBox" name="comboBox_hsa_c5r3">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="6">
+         <widget class="QComboBox" name="comboBox_hsa_c6r3">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QComboBox" name="comboBox_hsa_c1r4">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <widget class="QComboBox" name="comboBox_hsa_c2r4">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="3">
+         <widget class="QComboBox" name="comboBox_hsa_c3r4">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="4">
+         <widget class="QComboBox" name="comboBox_hsa_c4r4">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="5">
+         <widget class="QComboBox" name="comboBox_hsa_c5r4">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="6">
+         <widget class="QComboBox" name="comboBox_hsa_c6r4">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_77">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>50</y>
+         <width>61</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Column</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_50">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>310</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Row</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1231</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionHardware_Settings"/>
+    <addaction name="actionReagent_Configuration"/>
+    <addaction name="actionSave_Configuration"/>
+    <addaction name="actionLoad_Configuration"/>
+    <addaction name="actionHelp"/>
+    <addaction name="actionAbout"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionHardware_Settings">
+   <property name="text">
+    <string>Hardware Settings</string>
+   </property>
+  </action>
+  <action name="actionReagent_Configuration">
+   <property name="text">
+    <string>Reagent Configuration</string>
+   </property>
+  </action>
+  <action name="actionSave_Configuration">
+   <property name="text">
+    <string>Save Configuration</string>
+   </property>
+  </action>
+  <action name="actionLoad_Configuration">
+   <property name="text">
+    <string>Load Configuration</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="text">
+    <string>Help</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

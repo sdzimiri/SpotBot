@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dlgReagents</class>
+ <widget class="QDialog" name="dlgReagents">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>563</width>
+    <height>411</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Reagent Configuration</string>
+  </property>
+  <widget class="QPushButton" name="bttn_Accept">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>370</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Accept</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bttn_Cancel">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>370</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>541</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>491</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Reagent 4</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="label_9">
+       <property name="text">
+        <string>Reagent 9</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>Reagent 6</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>Reagent 7</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLineEdit" name="line_6"/>
+     </item>
+     <item row="1" column="3">
+      <widget class="QLabel" name="label_12">
+       <property name="text">
+        <string>Reagent 12</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="line_1"/>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="line_2"/>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="line_3"/>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="line_4"/>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>Reagent 10</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="4">
+      <widget class="QLineEdit" name="line_15"/>
+     </item>
+     <item row="5" column="4">
+      <widget class="QLineEdit" name="line_16"/>
+     </item>
+     <item row="6" column="4">
+      <widget class="QLineEdit" name="line_17"/>
+     </item>
+     <item row="7" column="4">
+      <widget class="QLineEdit" name="line_18"/>
+     </item>
+     <item row="8" column="4">
+      <widget class="QLineEdit" name="line_19"/>
+     </item>
+     <item row="9" column="4">
+      <widget class="QLineEdit" name="line_20"/>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Reagent 1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QLabel" name="label_14">
+       <property name="text">
+        <string>Reagent 14</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="QLabel" name="label_15">
+       <property name="text">
+        <string>Reagent 15</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="3">
+      <widget class="QLabel" name="label_16">
+       <property name="text">
+        <string>Reagent 16</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="3">
+      <widget class="QLabel" name="label_17">
+       <property name="text">
+        <string>Reagent 17</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="3">
+      <widget class="QLabel" name="label_18">
+       <property name="text">
+        <string>Reagent 18</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="3">
+      <widget class="QLabel" name="label_19">
+       <property name="text">
+        <string>Reagent 19</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="QLineEdit" name="line_13"/>
+     </item>
+     <item row="9" column="3">
+      <widget class="QLabel" name="label_20">
+       <property name="text">
+        <string>Reagent 20</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QLineEdit" name="line_11"/>
+     </item>
+     <item row="1" column="4">
+      <widget class="QLineEdit" name="line_12"/>
+     </item>
+     <item row="9" column="1">
+      <widget class="QLineEdit" name="line_10"/>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>Reagent 8</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>Reagent 5</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Reagent 2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Reagent 3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QLabel" name="label_13">
+       <property name="text">
+        <string>Reagent 13</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="4">
+      <widget class="QLineEdit" name="line_14"/>
+     </item>
+     <item row="8" column="1">
+      <widget class="QLineEdit" name="line_9"/>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="line_5"/>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLabel" name="label_11">
+       <property name="text">
+        <string>Reagent 11</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLineEdit" name="line_7"/>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLineEdit" name="line_8"/>
+     </item>
+     <item row="0" column="2">
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_21">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>10</y>
+     <width>131</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Reagent Configuration</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>line_1</tabstop>
+  <tabstop>line_2</tabstop>
+  <tabstop>line_3</tabstop>
+  <tabstop>line_4</tabstop>
+  <tabstop>line_5</tabstop>
+  <tabstop>line_6</tabstop>
+  <tabstop>line_7</tabstop>
+  <tabstop>line_8</tabstop>
+  <tabstop>line_9</tabstop>
+  <tabstop>line_10</tabstop>
+  <tabstop>line_11</tabstop>
+  <tabstop>line_12</tabstop>
+  <tabstop>line_13</tabstop>
+  <tabstop>line_14</tabstop>
+  <tabstop>line_15</tabstop>
+  <tabstop>line_16</tabstop>
+  <tabstop>line_17</tabstop>
+  <tabstop>line_18</tabstop>
+  <tabstop>line_19</tabstop>
+  <tabstop>line_20</tabstop>
+  <tabstop>bttn_Accept</tabstop>
+  <tabstop>bttn_Cancel</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
